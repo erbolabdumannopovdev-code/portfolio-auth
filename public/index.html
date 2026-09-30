@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerbol Abdumannopov — Full Stack Web Developer</title>
+<meta name="description" content="Yerbol Abdumannopov — Full Stack Web Developer. Loyihalar, ko'nikmalar va buyurtma berish uchun sayt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">YA <span class="tag">FULL STACK</span></div>
+    <nav>
+      <ul id="navList">
+        <li><a href="#about">Men haqimda</a></li>
+        <li><a href="#stack">Ko'nikmalar</a></li>
+        <li><a href="#projects">Loyihalar</a></li>
+        <li><a href="#timeline">Tajriba</a></li>
+        <li><a href="#order">Buyurtma berish</a></li>
+        <li><a href="#contact">Bog'lanish</a></li>
+      </ul>
+    </nav>
+    <div class="account-area">
+      <button class="btn btn-outline btn-small" id="loginOpenBtn" type="button">Kirish</button>
+      <div class="account-chip hidden" id="accountChip">
+        <span id="accountName">—</span>
+        <button class="chip-logout" id="logoutBtn" type="button" aria-label="Chiqish">⏻</button>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyuni ochish" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top" style="border-top:none;">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="coord"><span class="dot"></span> 41.2995° N, 69.2401° E — TASHKENT, UZ</div>
+        <h1>Yerbol<br>Abdumannopov<span class="stroke">.</span></h1>
+        <div class="role-line"><span class="rule"></span> Full&nbsp;Stack&nbsp;Web&nbsp;Developer</div>
+        <p class="lead">Frontenddan backendgacha, ma'lumotlar bazasidan deploygacha — foydalanuvchi uchun tez, ishonchli va toza kod bilan ishlaydigan veb-ilovalar quraman.</p>
+        <div class="hero-actions">
+          <a href="#order" class="btn btn-primary">Buyurtma berish</a>
+          <a href="#projects" class="btn btn-outline">Loyihalarni ko'rish</a>
+        </div>
+      </div>
+
+      <div class="cube-scene" aria-hidden="true">
+        <div class="floaty floaty-1">LOYIHA<br><span class="fv">30+</span></div>
+        <div class="floaty floaty-2">TAJRIBA<br><span class="fv">4 yil</span></div>
+        <div class="floaty floaty-3">MUDDAT<br><span class="fv">100%</span></div>
+        <div class="cube">
+          <div class="face f-front"><div class="f-num">FS</div><div class="f-lbl">FULL STACK DEV</div></div>
+          <div class="face f-back"><div class="f-num">JS</div><div class="f-lbl">TYPESCRIPT</div></div>
+          <div class="face f-right"><div class="f-num">DB</div><div class="f-lbl">POSTGRES / MONGO</div></div>
+          <div class="face f-left"><div class="f-num">API</div><div class="f-lbl">REST / NODE</div></div>
+          <div class="face f-top"><div class="f-num">GIT</div><div class="f-lbl">CI / DOCKER</div></div>
+          <div class="face f-bottom"><div class="f-num">UZ</div><div class="f-lbl">TASHKENT</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sheet-label"><span class="no">SHEET 01</span><span class="rule"></span><span>MEN HAQIMDA</span></div>
+      <h2 class="section-title reveal">Kod yozishni ham, uni ishlab turishini ham yaxshi ko'raman</h2>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>Men Yerbol — Toshkentda joylashgan full stack web developer. Ishimning katta qismi foydalanuvchi interfeysini yig'ish bilan bir qatorda, server tomonidagi mantiq, ma'lumotlar bazasi arxitekturasi va loyihani serverga chiqarish (deploy) jarayonlarini o'z ichiga oladi.</p>
+          <p>Har bir loyihada aniqlik va soddalikni afzal ko'raman: ortiqcha murakkablikdan qochib, aniq talabga mos, tez ishlaydigan va kelajakda kengaytirish oson bo'lgan yechimlar quraman.</p>
+        </div>
+        <div class="measures reveal">
+          <div class="measure tilt"><div class="num">30+</div><div class="lbl">TUGALLANGAN LOYIHA</div></div>
+          <div class="measure tilt"><div class="num">4</div><div class="lbl">YIL TAJRIBA</div></div>
+          <div class="measure tilt"><div class="num">15+</div><div class="lbl">TEXNOLOGIYA</div></div>
+          <div class="measure tilt"><div class="num">100%</div><div class="lbl">O'Z VAQTIDA TOPSHIRISH</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="sheet-label"><span class="no">SHEET 02</span><span class="rule"></span><span>TEXNOLOGIK STEK</span></div>
+      <h2 class="section-title reveal">Qatlam bo'yicha ko'nikmalar</h2>
+      <div class="stack reveal">
+        <div class="layer tilt">
+          <div class="layer-name"><span class="idx">01</span> Frontend</div>
+          <div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span></div>
+        </div>
+        <div class="layer tilt">
+          <div class="layer-name"><span class="idx">02</span> Backend</div>
+          <div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">REST API</span></div>
+        </div>
+        <div class="layer tilt">
+          <div class="layer-name"><span class="idx">03</span> Ma'lumotlar bazasi</div>
+          <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span></div>
+        </div>
+        <div class="layer tilt">
+          <div class="layer-name"><span class="idx">04</span> DevOps &amp; asboblar</div>
+          <div class="chips"><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">Nginx</span><span class="chip">CI/CD</span><span class="chip">Linux</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sheet-label"><span class="no">SHEET 03</span><span class="rule"></span><span>TANLANGAN LOYIHALAR</span></div>
+      <h2 class="section-title reveal">Loyihalar</h2>
+      <div class="projects-grid reveal">
+        <div class="project tilt">
+          <div class="pnum">PRJ / 01</div>
+          <h3>E-commerce platforma</h3>
+          <p>To'lov tizimi, mahsulotlar katalogi va buyurtmalarni boshqarish paneli bilan to'liq onlayn do'kon.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span></div>
+          <div class="links"><a href="#">Github ↗</a><a href="#">Demo ↗</a></div>
+        </div>
+        <div class="project tilt">
+          <div class="pnum">PRJ / 02</div>
+          <h3>Buyurtmalarni boshqarish tizimi</h3>
+          <p>Kichik biznes uchun buyurtma, sklad va mijozlar bazasini real vaqtda kuzatuvchi ilova.</p>
+          <div class="chips"><span class="chip">Next.js</span><span class="chip">Express</span><span class="chip">MySQL</span></div>
+          <div class="links"><a href="#">Github ↗</a><a href="#">Demo ↗</a></div>
+        </div>
+        <div class="project tilt">
+          <div class="pnum">PRJ / 03</div>
+          <h3>Ta'lim platformasi</h3>
+          <p>Video darslar, testlar va o'quvchilar progressini kuzatish imkonini beruvchi LMS tizimi.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">Laravel</span><span class="chip">MongoDB</span></div>
+          <div class="links"><a href="#">Github ↗</a><a href="#">Demo ↗</a></div>
+        </div>
+        <div class="project tilt">
+          <div class="pnum">PRJ / 04</div>
+          <h3>Analitika paneli</h3>
+          <p>Biznes ko'rsatkichlarini real vaqt rejimida grafiklar orqali vizualizatsiya qiluvchi dashboard.</p>
+          <div class="chips"><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Redis</span></div>
+          <div class="links"><a href="#">Github ↗</a><a href="#">Demo ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="wrap">
+      <div class="sheet-label"><span class="no">SHEET 04</span><span class="rule"></span><span>YO'L XARITASI</span></div>
+      <h2 class="section-title reveal">Tajriba</h2>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-year">2026 — HOZIRGACHA</div>
+          <h4>Full Stack Developer</h4>
+          <p>Frontend va backend loyihalarni boshidan oxirigacha mustaqil olib borish, arxitektura qarorlarini qabul qilish va jamoaviy loyihalarda ishlash.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2023 — 2026</div>
+          <h4>Web Developer</h4>
+          <p>Turli hajmdagi veb-saytlar va ilovalar ustida ishlash, mijozlar bilan bevosita muloqot va texnik talablarni ishlab chiqish.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2022</div>
+          <h4>Dasturlashni o'rganish yo'li boshlandi</h4>
+          <p>HTML/CSS/JavaScript asoslaridan boshlab, zamonaviy freymvorklar va server texnologiyalarigacha bosqichma-bosqich rivojlanish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order">
+    <div class="wrap">
+      <div class="sheet-label"><span class="no">SHEET 05</span><span class="rule"></span><span>BUYURTMA BERISH</span></div>
+      <h2 class="section-title reveal">Loyihangizni boshlaylik</h2>
+
+      <!-- logged-out prompt -->
+      <div class="order-locked reveal" id="orderLocked">
+        <p class="lead">Buyurtma berish uchun avval hisobingizga kiring — bu shunchaki emailingizga yuboriladigan 6 xonali kod bilan amalga oshadi, parol shart emas.</p>
+        <button class="btn btn-primary" id="orderLoginBtn" type="button">Kirish / Ro'yxatdan o'tish</button>
+      </div>
+
+      <!-- order form (shown when logged in) -->
+      <div class="order-form-wrap hidden reveal" id="orderFormWrap">
+        <form id="orderForm">
+          <div class="order-grid">
+            <label class="field">
+              <span>Xizmat turi</span>
+              <select name="serviceType" required>
+                <option value="" disabled selected>Tanlang</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Korporativ sayt">Korporativ sayt</option>
+                <option value="Onlayn-do'kon">Onlayn-do'kon</option>
+                <option value="Web-ilova">Web-ilova</option>
+                <option value="Boshqa">Boshqa</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Taxminiy byudjet (ixtiyoriy)</span>
+              <input type="text" name="budget" placeholder="masalan: 3-5 mln so'm">
+            </label>
+          </div>
+          <label class="field">
+            <span>Loyiha haqida qisqacha</span>
+            <textarea name="message" rows="4" required placeholder="Qanday sayt kerak, qaysi funksiyalar bo'lishi kerak, muddat va h.k."></textarea>
+          </label>
+          <p class="form-error" data-error="order"></p>
+          <button type="submit" class="btn btn-primary">
+            <span class="btn-label">Buyurtma yuborish</span>
+            <span class="btn-spinner" hidden></span>
+          </button>
+        </form>
+        <div class="order-success hidden" id="orderSuccess">
+          <p>✓ Buyurtmangiz qabul qilindi. Tez orada siz bilan bog'lanaman.</p>
+        </div>
+        <div class="my-orders" id="myOrders"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / MAP -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="map-panel reveal" aria-hidden="true">
+        <svg viewBox="0 0 400 320" fill="none">
+          <g stroke="#1B2440" stroke-width="1">
+            <line x1="0" y1="40" x2="400" y2="40"/><line x1="0" y1="120" x2="400" y2="120"/>
+            <line x1="0" y1="200" x2="400" y2="200"/><line x1="0" y1="280" x2="400" y2="280"/>
+            <line x1="66" y1="0" x2="66" y2="320"/><line x1="133" y1="0" x2="133" y2="320"/>
+            <line x1="200" y1="0" x2="200" y2="320"/><line x1="266" y1="0" x2="266" y2="320"/>
+            <line x1="333" y1="0" x2="333" y2="320"/>
+          </g>
+          <g stroke="#00D4FF" stroke-width="1.4" fill="none" opacity="0.55">
+            <path d="M20 90 L60 70 L100 85 L120 70 L160 75 L150 110 L110 120 L80 115 L40 130 Z"/>
+            <path d="M170 60 L230 55 L260 75 L290 70 L320 90 L300 115 L250 120 L210 105 L180 100 Z"/>
+            <path d="M190 140 L230 135 L260 160 L250 210 L220 230 L200 200 L185 170 Z"/>
+            <path d="M60 160 L100 155 L110 190 L90 230 L60 220 L50 185 Z"/>
+            <path d="M320 200 L360 195 L370 230 L340 245 L315 225 Z"/>
+          </g>
+          <g>
+            <circle class="pulse" cx="248" cy="92" r="10" fill="none" stroke="#7C6BFF" stroke-width="1.5"/>
+            <circle cx="248" cy="92" r="4" fill="#7C6BFF"/>
+            <line x1="248" y1="92" x2="248" y2="60" stroke="#7C6BFF" stroke-width="1" stroke-dasharray="2 3"/>
+          </g>
+          <text x="252" y="55" fill="#E8EEFC" font-family="IBM Plex Mono" font-size="11">TASHKENT</text>
+          <text x="10" y="312" fill="#8B96B8" font-family="IBM Plex Mono" font-size="9">STYLISED MAP — NOT TO SCALE</text>
+        </svg>
+        <div class="map-caption"><span>UZBEKISTAN</span><span class="city">41.2995° N, 69.2401° E</span></div>
+      </div>
+
+      <div class="contact-info reveal">
+        <div class="sheet-label"><span class="no">SHEET 06</span><span class="rule"></span><span>ALOQA</span></div>
+        <h2 class="section-title">Loyihangiz bormi?<br>Suhbatlashaylik.</h2>
+        <p class="lead">Yangi loyiha, hamkorlik yoki savolingiz bo'lsa — quyidagi kanallar orqali yoki yuqoridagi buyurtma formasi orqali bemalol yozing.</p>
+        <ul class="contact-list">
+          <li><span class="k">EMAIL</span> <a href="mailto:yerbol.dev@example.com">yerbol.dev@example.com</a></li>
+          <li><span class="k">TELEFON</span> <a href="tel:+998901234567">+998 90 123 45 67</a></li>
+          <li><span class="k">JOYLASHUV</span> <span>Toshkent, O'zbekiston</span></li>
+        </ul>
+        <div class="socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> Yerbol Abdumannopov. Barcha huquqlar himoyalangan.</p>
+    <p>Qurilgan: HTML · CSS · JavaScript · Node.js</p>
+  </div>
+</footer>
+
+<!-- ===================== AUTH MODAL ===================== -->
+<div class="modal-overlay hidden" id="authOverlay">
+  <div class="modal-panel" id="authModal">
+
+    <div class="modal-view" id="authView">
+      <button class="modal-close" id="authClose" type="button" aria-label="Yopish">✕</button>
+      <div class="brand" style="margin-bottom:6px;">YA</div>
+      <p class="tagline">Buyurtma berish uchun hisobingizga kiring</p>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="login" type="button">Kirish</button>
+        <button class="tab" data-tab="register" type="button">Ro'yxatdan o'tish</button>
+      </div>
+
+      <form class="tab-panel" id="loginForm" novalidate>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" placeholder="siz@gmail.com">
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="remember" checked>
+          <span>Meni eslab qol</span>
+        </label>
+        <p class="form-error" data-error="login"></p>
+        <button type="submit" class="btn btn-primary" style="width:100%;">
+          <span class="btn-label">Kod yuborish</span>
+          <span class="btn-spinner" hidden></span>
+        </button>
+      </form>
+
+      <form class="tab-panel hidden" id="registerForm" novalidate>
+        <label class="field">
+          <span>Ism</span>
+          <input type="text" name="name" required autocomplete="name" placeholder="Ismingiz">
+        </label>
+        <label class="field">
+          <span>Yosh</span>
+          <input type="number" name="age" required min="13" max="120" placeholder="Yoshingiz">
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" required autocomplete="email" placeholder="siz@gmail.com">
+        </label>
+        <p class="form-error" data-error="register"></p>
+        <button type="submit" class="btn btn-primary" style="width:100%;">
+          <span class="btn-label">Kod yuborish</span>
+          <span class="btn-spinner" hidden></span>
+        </button>
+      </form>
+    </div>
+
+    <div class="modal-view hidden" id="otpView">
+      <button class="modal-back" id="otpBack" type="button" aria-label="Orqaga">←</button>
+      <button class="modal-close" id="otpClose" type="button" aria-label="Yopish">✕</button>
+      <h3 class="otp-title">Emailingizni tasdiqlang</h3>
+      <p class="otp-sub">Kod yuborildi: <strong id="otpEmailLabel"></strong></p>
+      <div class="otp-inputs" id="otpInputs">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="1-raqam">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="2-raqam">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="3-raqam">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="4-raqam">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="5-raqam">
+        <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="6-raqam">
+      </div>
+      <p class="form-error" data-error="otp"></p>
+      <button class="btn btn-primary" id="verifyBtn" type="button" style="width:100%;">
+        <span class="btn-label">Tasdiqlash</span>
+        <span class="btn-spinner" hidden></span>
+      </button>
+      <button class="btn-ghost" id="resendBtn" type="button">Kodni qayta yuborish (<span id="resendTimer">60</span>)</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
